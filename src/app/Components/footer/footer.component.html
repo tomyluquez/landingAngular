@@ -1,0 +1,47 @@
+<footer class="style-4">
+    <div class="container pt-[60px] mx-auto">
+        <div class="section-head text-center style-4">
+            <app-titles [subTitle]="subTitle" [title]="title" [description]="description"></app-titles>
+        </div>
+        <div class="foot">
+            <div class="flex flex-col md:flex-row align-items-center justify-center gap-2 md:gap-8">
+                <div class="flex items-center justify-center">
+                    <div class="w-[160px]">
+                        <img [src]="imgLogo" alt="" />
+                    </div>
+                </div>
+                <div class="flex align-items-center justify-center">
+                    <ul class=" links">
+                        <li>
+                            <a href="#" class="active">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="">Servicios</a>
+                        </li>
+                        <li>
+                            <a href="">Blog</a>
+                        </li>
+                        <li>
+                            <a href="">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copywrite text-center">
+            <small class="small">
+                © - {{year}}
+                <a href="#" class="fw-bold text-decoration-underline">
+                    Núcleo IT
+                </a>
+                . Todos los derechos reservados. 2009 - {{year}}
+            </small>
+        </div>
+    </div>
+    <img [src]="imgHero3" alt="" class="wave mt-[60px]" />
+</footer>

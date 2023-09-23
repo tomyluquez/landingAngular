@@ -1,0 +1,24 @@
+<section id="features" class="bg-verdeClaro py-[70px] text-center relative overflow-hidden z-[10]">
+    <div class="z-[555] relative">
+        <app-titles subTitle="Nucleo check" title="Increibles Caracteristicas"></app-titles>
+        <div
+            class="flex md:flex-row flex-col items-center justify-center flex-wrap gap-12 xl:gap-12 lg:mt-[100px] mt-[70px] cursor-default">
+
+            <div *ngFor="let feature of arrayFeatures">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i [ngClass]="feature.icon" class="title"></i>
+                            <p class="w-[80%] h-[50px]">{{feature.text}}</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>{{feature.text2}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <img class="img-circle" [src]="imgCircle" alt="" />
+</section>

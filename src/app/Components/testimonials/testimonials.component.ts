@@ -1,0 +1,46 @@
+import { Component } from '@angular/core';
+
+interface Testimonial {
+  inicial: string;
+  nombre: string;
+  testimonio: string;
+}
+
+@Component({
+  selector: 'app-testimonials',
+  templateUrl: './testimonials.component.html',
+  styleUrls: ['./testimonials.component.css']
+})
+export class TestimonialsComponent {
+  title= 'Conoce lo que opinan nuestros clientes de nosotros'
+  aboutWave = '../../../assets/img/Images/about_s4_wave.png';
+  subTitle='Testimonios'
+  description = "Tenemos las mejores reseñas en google."
+  imgTesti1 = '../assets/img/Testimonials/testi_s4_ic1.png';
+  imgTesti2 = '../assets/img/Testimonials/testi_s4_ic2.png';
+  imgTesti3 = '../assets/img/icons/contact_globe.svg';
+
+  arrayTestimonials: Testimonial[] = []
+
+  ngOnInit(): void {
+    this.arrayTestimonials = [
+      {
+        inicial: "M",
+        nombre: "Marciel Vieira",
+        testimonio: "Esta empresa que trabaja conmigo desde hace varios años es muy muy recomendables, el sistema es muy completo, y la asistencia al usuario más que acorde. He transitado estos años su trayectoria he visto los cambios que han logrado incorporar para nosotros los que usamos sus aplicaciones ."
+      },
+      {
+        inicial: "S",
+        nombre: "Sandra Castaneira",
+        testimonio: "La atención y asistencia que me brindó Blanca hoy fue excelente! Casi sin conocimientos pude seguir sus indicaciones y solucioné el tema de facturación."
+      },
+      {
+        inicial: "J",
+        nombre: "Julieta Maya",
+        testimonio: "Muy buena la atención, siempre están disponibles para ayudar a resolver. El programa muy completo y al mismo tiempo fácil de usar."
+      }
+    ]
+  }
+
+
+}

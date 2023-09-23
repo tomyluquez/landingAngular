@@ -1,0 +1,40 @@
+.titleGradient {
+  font-size: 40px;
+  font-weight: bold;
+  background-clip: text;
+  color: transparent;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#374c17),
+    color-stop(30%, #69932b),
+    color-stop(30%, #69932b),
+    color-stop(73%, #7ea940),
+    to(#7ea940)
+  );
+  background-image: -webkit-linear-gradient(
+    left,
+    #374c17 0%,
+    #69932b 30%,
+    #69932b 30%,
+    #54e14e 73%,
+    #7ea940 100%
+  );
+  background-image: -o-linear-gradient(
+    left,
+    #374c17 0%,
+    #69932b 30%,
+    #69932b 30%,
+    #54e14e 73%,
+    #7ea940 100%
+  );
+  background-image: linear-gradient(
+    to right,
+    #374c17 0%,
+    #69932b 30%,
+    #69932b 30%,
+    #54e14e 73%,
+    #7ea940 100%
+  );
+}

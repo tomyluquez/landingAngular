@@ -1,0 +1,4 @@
+.contentSlider {
+  animation: slider 35s linear infinite;
+  width: calc(150px * 24);
+}

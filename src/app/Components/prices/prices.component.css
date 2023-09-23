@@ -1,0 +1,51 @@
+.elMasElegido::before,
+.elMasElegido::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: white;
+  transition: all 0.1s ease-in;
+}
+
+.elMasElegido::before {
+  top: 0;
+  left: 0;
+}
+
+.elMasElegido::after {
+  bottom: 0;
+  right: 0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  background-color: #7ea940;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.switch::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 40px;
+  background-color: #fff;
+  left: 1px;
+  top: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type='checkbox']:checked + .switch::after {
+  transform: translateX(28px);
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
