@@ -19,7 +19,7 @@
 
 .navbarMobile.activo {
   @media screen and (max-width: 1200px) {
-    height: 315px;
+    height: 250px;
     pointer-events: auto;
   }
 }

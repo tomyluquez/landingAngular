@@ -9,7 +9,6 @@
 }
 a {
   text-decoration: none !important;
-  color: inherit !important;
 }
 
 a img {
@@ -74,7 +73,7 @@ scrollbar-thumb:hover {
 .wave {
   position: absolute;
   left: -3%;
-  bottom: -100px;
+  bottom: -10px;
   width: 106%;
   max-width: unset;
   height: 240px;

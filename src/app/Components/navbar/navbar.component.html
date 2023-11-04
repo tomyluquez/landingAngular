@@ -1,5 +1,5 @@
 <div [ngClass]="{'nav-scroll': scrollPosition > 200}"
-    class="relative z-[999] py-[20px] px-[15px] bg-bgNav xl:bg-white rounded-t-[20px] mt-[-38px] flex flex-wrap items-center justify-between md:justify-center md:gap-12">
+    class="relative z-[999] py-[20px] px-[15px] bg-bgNav xl:bg-white rounded-t-[20px] flex flex-wrap items-center justify-between lg:justify-center lg:gap-12">
     <!-- imagen logo -->
     <img [src]="imgLogo" alt="logo nucleo check" class="w-[150px] h-[50px] cursor-pointer" (click)="scrollToTop()">
 
@@ -11,10 +11,13 @@
     <!-- menu -->
     <ul class="flex flex-row gap-4 xl:gap-12 xl:items-center justify-center font-bold text-[12px] navbarMobile"
         [ngClass]="{'activo': isOpen}">
-        <li *ngFor="let element of arrayElements" class="relative">
-            <a [href]="element.href" class="duration-300 elements" (click)="toggleMenu()">{{
+        <li *ngFor="let element of arrayElements" class="relative flex">
+            <a [href]="element.href" class="duration-300 elements m-auto text-slate-600" (click)="toggleMenu()">{{
                 element.text.toUpperCase()}}</a>
         </li>
-        <app-button-gral [textButton]="textButton"></app-button-gral>
+        <a [href]="linkCalendly" className="btn buton rounded-pill bg-blue4 fw-bold text-white me-4" target="_blank"
+            rel="noreferrer">
+            <app-button-gral textButton="Agenda una demo"></app-button-gral>
+        </a>
     </ul>
 </div>

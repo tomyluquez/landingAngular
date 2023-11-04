@@ -69,3 +69,15 @@
   -webkit-animation: rotate-center 100s linear infinite both;
   animation: rotate-center 100s linear infinite both;
 }
+
+.divIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 125px;
+  height: 125px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #7ea940;
+  font-size: 2rem;
+}

@@ -3,6 +3,12 @@
         <div class="section-head text-center style-4">
             <app-titles [subTitle]="subTitle" [title]="title" [description]="description"></app-titles>
         </div>
+        <div>
+            <div
+                class="flex flex-col pl-[25px] lg:pl-[0px] lg:flex-row items-start justify-center gap-8 lg:gap-12 mx-auto">
+                <app-icon-text *ngFor="let element of arrayForm" [element]="element"></app-icon-text>
+            </div>
+        </div>
         <div class="foot">
             <div class="flex flex-col md:flex-row align-items-center justify-center gap-2 md:gap-8">
                 <div class="flex items-center justify-center">
