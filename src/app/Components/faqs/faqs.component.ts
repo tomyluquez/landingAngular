@@ -14,6 +14,10 @@ interface Faqs {
 export class FaqsComponent {
   arrayFaqs: Faqs[] = [];
   arrayFaqs2: Faqs[] = [];
+  subTitle = 'Preguntas Frecuentes';
+  title = '¿Tienes más preguntas sobre Núcleo Check?';
+  description =
+    'Consulta en esta sección y encuentra la respuesta a tus preguntas';
 
   indexSelect = 0;
 
@@ -23,25 +27,25 @@ export class FaqsComponent {
         id: 1,
         question: '¿Es seguro trabajar con un software en la nube?',
         answer:
-          'Sin dudas trabajar en la nube es muchísimo más seguro que hacerlo con una PC en el negocio. Para garantizas un excelente servicio, nuestro sistema está alojado en los servidores de Microsoft (Azure) en los Estados Unidos donde cuéntan con los mejores protocolos de seguridad garantizando estar online 99.99% del tiempo.',
+          'Sin dudas. Trabajar en la nube es más seguro que desde un computador o PC fijo. Para dar gran excelencia en nuestro servicio, alojamos nuestro sistema en los servidores de Microsoft (Azure) en los Estados Unidos. Cuentan con los mejores protocolos de seguridad garantizados por estar online 99.99% del tiempo.',
       },
       {
         id: 2,
         question: '¿Qué pasa si me quedo sin internet en el negocio?',
         answer:
-          'No pasa nada, el sistema si bien es 100% web y depende de internet, también es responsive por lo cual podrás seguir utilizando desde tu celular sin problema.',
+          'Puedes seguir operando, ya que todo está alojado en la nube. Puedes acceder desde cualquier dispositivo móvil (celular, tablet o laptop) que cuente con acceso a internet',
       },
       {
         id: 3,
         question: '¿Cuento con Soporte técnico en caso de necesitarlo?',
         answer:
-          'Sí, todos los usuarios del sistema Núcleo Check cuenta con nuestra mesa de ayuda los 365 días del año. Al margen de esto, brindamos capacitaciones semanales ilimitadas para que aprovechen al máximo las prestaciones de nuestro software.',
+          'Si. Todos los usuarios del sistema de Núcleo Check cuentan con la atención los 365 días del año. Nuestros clientes cuentan con capacitaciones ilimitadas que brindamos para que puedan aprovechar al máximo el servicio.',
       },
       {
         id: 4,
         question: '¿El sistema se puede usar con pantallas táctiles?',
         answer:
-          'Sí, el sistema fue diseñado para poder ser utilizado eficientemente durante la toma de pedidos y la atención en el salón con pantalla táctil. Al ser un software 100% responsive puede ser utilizado en Tablets y Celulares sin problema.',
+          'Si. Este sistema fue diseñado para ser utilizado en dispositivos móviles que por lo general cuentan con pantallas táctiles como tablets y celulares. De esta manera, se agiliza el registro de los pedidos de los meseros y en las aplicaciones de delivery gastronómicas.',
       },
     ];
     this.arrayFaqs2 = [
@@ -50,19 +54,19 @@ export class FaqsComponent {
         question:
           '¿Puedo tomar pedidos de Delivery y Take away más allá de los pedidos de las mesas?',
         answer:
-          ' Si, el sistema está pensado para poder tomar pedidos en mesas, a domicilio y de mostrador. Para agilizar la adición, contamos con dos pantallas separadas, una para el salón y otra para los pedidos de Delivery y Take Away.',
+          'Si. Con Núcleo Check Puedes tomar pedidos de delivery y take away. Los usuarios pueden tomar los pedidos de las mesas, los de delivery a domicilio y los de take away.',
       },
       {
         id: 7,
         question: '¿Cómo hago para comenzar a usar Núcleo Check?',
         answer:
-          'Una vez dado de alta solo deberás loguearte y comenzar a disfrutar de todas las funcionalidades que ofrecemos.',
+          'Es simple. Te damos de alta como nuevo usuario, luego ingresas con tu usuario y contraseña para empezar a aprovechar las ventajas que Núcleo Check aporta a tu negocio.',
       },
       {
         id: 8,
         question: '¿Núcleo Check es un sistema nuevo?',
         answer:
-          'No, Núcleo Check es la evolución del sistema Núcleo IT Gastronómico el cual se viene desarrollando desde 2009. Esta nueva versión es 100% web, fue desarrollada con las últimas tecnologías que ofrece el mercado, aprovechando al máximo todos los años de experiencia en el rubro gastronómico.',
+          'Núcleo Check es la versión actualizada de un sistema que se viene desarrollando desde 2009, completamente online para facilitar el uso y las tareas de un negocio gastronómico.',
       },
       {
         id: 5,

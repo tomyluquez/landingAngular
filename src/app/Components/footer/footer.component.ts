@@ -13,10 +13,9 @@ interface FormElements {
 })
 export class FooterComponent {
   year = new Date().getFullYear();
-  subTitle = 'Nucleo Check';
+  subTitle = 'Núcleo Check';
   title = '¿Listo para descubrirnos?';
-  description =
-    'Accede a la demostracion online y te pondras en contacto con nuestro equipo de asesores quien te ayudaran en lo que necesites.  ';
+  description = 'Contacta con nuestros asesores comerciales.';
   imgHero3 = '../assets/img/Images/header_4_wave.png';
   imgLogo = '../../../assets/img/Nucleo-img/Nucleo_Check_Logovariables-02.png';
   arrayForm: FormElements[] = [];
@@ -26,7 +25,7 @@ export class FooterComponent {
       {
         id: 1,
         icon: 'fa-solid fa-phone',
-        text: 'Bs. As.: 11 5263-0039',
+        text: 'Buenos Aires: 11 5263-0039',
       },
       {
         id: 2,

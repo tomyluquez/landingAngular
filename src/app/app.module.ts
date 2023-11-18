@@ -24,7 +24,7 @@ import { ButtonScrollComponent } from './Components/button-scroll/button-scroll.
 import { PreloadingComponent } from './Components/preloading/preloading.component';
 import { FormContactComponent } from './Components/form-contact/form-contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { DemoComponent } from './components/demo/demo.component';
 
 @NgModule({
   declarations: [
@@ -49,14 +49,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     ButtonScrollComponent,
     PreloadingComponent,
     FormContactComponent,
-    
+    DemoComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    ReactiveFormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

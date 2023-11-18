@@ -9,22 +9,22 @@ import { Elements } from '../about/about.component';
 export class About2Component {
   imgAbout = '../../../assets/img/Images/ipad.png';
   aboutBubles = '../assets/img/Images/about_s4_bubble2.png';
-  title = 'Monitor de cocina';
+  title = 'Monitor de cocina. Ingresa y organiza los pedidos';
   subTitle = 'Comandas virtuales';
   description =
-    'Con el monitor de cocina, podras adicionar todo sin necesidad de imprimir. Teniendo un dispositivo en la cocina podrás encargarte de todo. De todos modos, podes seguir imprimiendo las comandas tradicionales sin problema!';
+    'Con el monitor de cocina podrás ingresar todos los pedidos sin necesidad de imprimir. Teniendo un dispositivo en la cocina puedes encargarte de todo sin interrumpir las tareas';
   arrayElements: Elements[] = [];
   ngOnInit() {
     this.arrayElements = [
       {
         id: 1,
         icon: 'fa-solid fa-print',
-        text: 'Ahorro en papel + cuidado del planeta',
+        text: 'Ahorra en papel y cuida del planeta',
       },
       {
         id: 2,
         icon: 'fa-solid fa-laptop',
-        text: 'Dispositvo en cocina',
+        text: 'Dispositivo móvil en la cocina',
       },
     ];
   }

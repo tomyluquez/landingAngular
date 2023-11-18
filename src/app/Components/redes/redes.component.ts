@@ -21,8 +21,8 @@ interface FormElements {
 })
 export class RedesComponent {
   subTitle = 'Canales de comunicacion';
-  title = 'Seguinos en nuestras redes';
-  description = 'Nos podes encontrar en instagram, youtube y linkedin, o dejarnos tus datos y te contactamos a la brevedad';
+  title = 'Síguenos en nuestras redes sociales';
+  description = 'Encuéntranos aquí y contáctanos.';
 
   arrayRedes: Redes[] = [];
   arrayForm: FormElements[] = [];

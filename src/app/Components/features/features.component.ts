@@ -21,21 +21,21 @@ export class FeaturesComponent {
     this.arrayFeatures = [
       {
         id: 1,
-        text: 'Facturacion electronica',
+        text: 'Facturación electrónica',
         text2:
           'Facturacion electronica de afip para facturar sin impresora fiscal',
         icon: 'fa-solid fa-file-invoice-dollar',
       },
       {
         id: 2,
-        text: 'Tablet para mozos',
+        text: 'Tablet para meseros',
         text2:
           'Posibilidad de que los mozos tomen los pedidos en las mesas con un dispositivo',
         icon: 'fa-solid fa-tablet-screen-button',
       },
       {
         id: 3,
-        text: 'Integrado con todas las Apps de pedidos',
+        text: 'Integración con todas las aplicaciones de delivery online',
         text2:
           'Estamos integrados con las mejores apps de pedidos para que uses todo en un solo sistema',
         icon: 'fa-solid fa-truck-ramp-box',
@@ -48,7 +48,7 @@ export class FeaturesComponent {
       },
       {
         id: 5,
-        text: 'Reportería y auditoría',
+        text: 'Auditoría e informes',
         text2: 'para que puedas ver el estado de tu negocio',
         icon: 'fa-solid fa-chart-line',
       },

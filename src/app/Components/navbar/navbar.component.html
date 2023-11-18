@@ -9,7 +9,7 @@
     </div>
 
     <!-- menu -->
-    <ul class="flex flex-row gap-4 xl:gap-12 xl:items-center justify-center font-bold text-[12px] navbarMobile"
+    <ul class="flex flex-row gap-4 xl:gap-12 xl:items-center justify-center font-bold text-[16px] navbarMobile"
         [ngClass]="{'activo': isOpen}">
         <li *ngFor="let element of arrayElements" class="relative flex">
             <a [href]="element.href" class="duration-300 elements m-auto text-slate-600" (click)="toggleMenu()">{{
@@ -17,7 +17,7 @@
         </li>
         <a [href]="linkCalendly" className="btn buton rounded-pill bg-blue4 fw-bold text-white me-4" target="_blank"
             rel="noreferrer">
-            <app-button-gral textButton="Agenda una demo"></app-button-gral>
+            <app-button-gral textButton="Agendá una demo"></app-button-gral>
         </a>
     </ul>
 </div>

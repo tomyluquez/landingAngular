@@ -13,6 +13,10 @@ interface Apps {
 export class IntegracionesComponent {
   backInteg = '../assets/img/Images/intg_back.png';
   arrayApps: Apps[] = [];
+  title = 'Integración con las aplicaciones de delivery más usadas';
+  subTitle = 'Todos los pedidos en un solo lugar';
+  description =
+    'Con la pantalla integradora concentras todos los pedidos en el mismo sitio';
 
   ngOnInit() {
     this.arrayApps = [
