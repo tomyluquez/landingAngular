@@ -24,7 +24,7 @@ import { ButtonScrollComponent } from './Components/button-scroll/button-scroll.
 import { PreloadingComponent } from './Components/preloading/preloading.component';
 import { FormContactComponent } from './Components/form-contact/form-contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { DemoComponent } from './components/demo/demo.component';
+import { DemoComponent } from './Components/demo/demo.component';
 
 @NgModule({
   declarations: [
