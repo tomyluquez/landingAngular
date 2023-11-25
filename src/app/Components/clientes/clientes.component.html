@@ -10,8 +10,10 @@
             <div
                 class="flex contentSlider items-center justify-center gap-12 mt-[80px] pb-[70px] border-b border-borderColor">
                 <div *ngFor="let cliente of arrayClients" class="contentImg">
-                    <img [src]="cliente.img" alt="logo cliente"
-                        class="min-w-[150px] grayscale hover:grayscale-0 duration-300" />
+                    <a [href]="cliente.href" target="_blank">
+                        <img [src]="cliente.img" [alt]="cliente.alt"
+                            class="min-w-[150px] grayscale hover:grayscale-0 duration-300" />
+                    </a>
                 </div>
                 <div *ngFor="let cliente of arrayClients" class="contentImg">
                     <img [src]="cliente.img" alt="logo cliente"

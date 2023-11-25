@@ -13,7 +13,7 @@ interface Apps {
 export class IntegracionesComponent {
   backInteg = '../assets/img/Images/intg_back.png';
   arrayApps: Apps[] = [];
-  title = 'Integración con las aplicaciones de delivery más usadas';
+  title = 'Integrado con las apliaciones mas usadas';
   subTitle = 'Todos los pedidos en un solo lugar';
   description =
     'Con la pantalla integradora concentras todos los pedidos en el mismo sitio';
@@ -42,7 +42,7 @@ export class IntegracionesComponent {
       },
       {
         id: 6,
-        src: '../assets/img/Images/logodomo.png',
+        src: '../assets/img/Images/domo.png',
       },
     ];
   }

@@ -1,2 +1,5 @@
-<button    
-    class="bg-nucleo hover:bg-verdeCheck hover:shadow-lg duration-300 text-white text-[15px] py-2 px-4 rounded-[40px] text-center cursor-pointer">{{textButton}}</button>
+<button
+    [ngClass]="{'bg-nucleo hover:bg-verdeCheck text-white' : tipeButton === 'primary', ' text-nucleo border-2 border-nucleo' : tipeButton === 'secondary'}"
+    class="hover:shadow-lg duration-300 text-white text-[14px] py-2 px-4 rounded-[40px] cursor-pointer">{{textButton}}
+
+</button>

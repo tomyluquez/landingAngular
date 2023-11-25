@@ -1,14 +1,5 @@
 import { Component } from '@angular/core';
-
-interface Planes {
-  id: number;
-  title: string;
-  price: string;
-  yearPrice: string;
-  ul: Array<any>;
-  textButton: string;
-  elegido: boolean;
-}
+import { Planes, Price } from 'src/app/interfaces/interfaces';
 
 @Component({
   selector: 'app-prices',
@@ -18,17 +9,17 @@ interface Planes {
 export class PricesComponent {
   subTitle = 'Planes Núcleo Check';
   title = 'Elige el plan ideal para tu negocio gastronómico';
-  checkedInput = false;
+  checkedInput = 0;
 
   arrayPrices: Planes[] = [];
+  arrayTypePrices: Price[] = [];
 
   ngOnInit(): void {
     this.arrayPrices = [
       {
         id: 1,
         title: 'Plan Inicial',
-        price: '6.000',
-        yearPrice: '60.000',
+        price: 15500,
         ul: [
           {
             id: 1,
@@ -67,8 +58,7 @@ export class PricesComponent {
       {
         id: 2,
         title: 'Plan Premium',
-        price: '8.000',
-        yearPrice: '84.000',
+        price: 19500,
         ul: [
           {
             id: 1,
@@ -107,8 +97,7 @@ export class PricesComponent {
       {
         id: 3,
         title: 'Plan Superior',
-        price: '10.000',
-        yearPrice: '108.000',
+        price: 23000,
         ul: [
           {
             id: 1,
@@ -145,9 +134,54 @@ export class PricesComponent {
         elegido: false,
       },
     ];
+
+    this.arrayTypePrices = [
+      {
+        title: 'Mensual',
+        descuento: 0,
+        meses: 1,
+      },
+      {
+        title: 'Semestral',
+        descuento: 20,
+        meses: 6,
+      },
+      {
+        title: 'Anual',
+        descuento: 30,
+        meses: 12,
+      },
+    ];
   }
 
-  changeCheckbox() {
-    this.checkedInput = !this.checkedInput;
+  changeCheckbox(value: number) {
+    this.checkedInput = value;
+  }
+
+  calculatePlan(price: number) {
+    if (this.checkedInput === 0) return price;
+    const selectedType = this.arrayTypePrices.find(
+      (type) => type.descuento === this.checkedInput,
+    );
+
+    if (selectedType && selectedType.descuento) {
+      return price - (price * selectedType?.descuento) / 100; // Calcula el descuento
+    } else {
+      return 0; // No hay descuento si no se encuentra el tipo seleccionado o no hay precios definidos
+    }
+  }
+
+  calculatePrice(price: number) {
+    const selectedType = this.arrayTypePrices.find(
+      (type) => type.descuento === this.checkedInput,
+    );
+
+    if (selectedType && selectedType.descuento) {
+      const abono = price - (price * selectedType?.descuento) / 100;
+      const total = abono * selectedType.meses;
+      return `${total} por ${selectedType.meses} meses`; // Calcula el descuento
+    } else {
+      return 0; // No hay descuento si no se encuentra el tipo seleccionado o no hay precios definidos
+    }
   }
 }

@@ -20,6 +20,8 @@ export class TestimonialsComponent {
   imgTesti1 = '../assets/img/Testimonials/testi_s4_ic1.png';
   imgTesti2 = '../assets/img/Testimonials/testi_s4_ic2.png';
   imgTesti3 = '../assets/img/icons/contact_globe.svg';
+  buttonHref =
+    'https://www.google.com/search?q=nucleoit&oq=nucleoit&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MggIARAAGAoYHjIGCAIQRRg8MgYIAxBFGDwyBggEEEUYQTIGCAUQRRg8MgYIBhBFGDwyBggHEEUYQdIBCDM2NzlqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#lrd=0x95bcc7f01fd777c9:0xe32dbfb50020a961,1,,,,1';
 
   arrayTestimonials: Testimonial[] = [];
 

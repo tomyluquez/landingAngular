@@ -1,7 +1,7 @@
 <div [ngClass]="{'nav-scroll': scrollPosition > 200}"
     class="relative z-[999] py-[20px] px-[15px] bg-bgNav xl:bg-white rounded-t-[20px] flex flex-wrap items-center justify-between lg:justify-center lg:gap-12">
     <!-- imagen logo -->
-    <img [src]="imgLogo" alt="logo nucleo check" class="w-[150px] h-[50px] cursor-pointer" (click)="scrollToTop()">
+    <img [src]="imgLogo" alt="logo nucleo check" class="w-[200px] h-[65px] cursor-pointer" (click)="scrollToTop()">
 
     <!-- icono menu hamburguesa -->
     <div (click)="toggleMenu()" class="lg:hidden border-[1px] border-gray-500 rounded">
@@ -9,15 +9,17 @@
     </div>
 
     <!-- menu -->
-    <ul class="flex flex-row gap-4 xl:gap-12 xl:items-center justify-center font-bold text-[16px] navbarMobile"
+    <ul class="flex flex-row gap-4 xl:gap-12 xl:items-center justify-center font-bold text-[12px] navbarMobile"
         [ngClass]="{'activo': isOpen}">
         <li *ngFor="let element of arrayElements" class="relative flex">
             <a [href]="element.href" class="duration-300 elements m-auto text-slate-600" (click)="toggleMenu()">{{
                 element.text.toUpperCase()}}</a>
         </li>
-        <a [href]="linkCalendly" className="btn buton rounded-pill bg-blue4 fw-bold text-white me-4" target="_blank"
-            rel="noreferrer">
-            <app-button-gral textButton="Agendá una demo"></app-button-gral>
-        </a>
+        <div class="flex items-center justify-center gap-2 mt-2 xl:mt-0">
+            <a *ngFor="let button of arrayButtons" [href]="button.href" target="_blank" rel="noreferrer">
+                <app-button-gral [textButton]="button.text" [tipeButton]="button.tipe"></app-button-gral>
+            </a>
+        </div>
+
     </ul>
 </div>

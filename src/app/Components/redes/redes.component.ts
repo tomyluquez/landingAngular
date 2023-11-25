@@ -37,6 +37,13 @@ export class RedesComponent {
         text: 'Novedades + Presentaciones',
       },
       {
+        id: 4,
+        href: 'https://www.facebook.com/nucleoit',
+        icon: 'fab fa-facebook',
+        title: 'Facebook',
+        text: 'Novedades ',
+      },
+      {
         id: 2,
         href: 'https://www.youtube.com/nucleoit',
         icon: 'fab fa-youtube',

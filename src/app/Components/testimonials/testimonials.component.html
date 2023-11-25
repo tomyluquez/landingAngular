@@ -7,31 +7,36 @@
                         <app-titles [subTitle]="subTitle" [title]="title" [description]="description"></app-titles>
                         <div class="flex flex-col items-start justify-center gap-4 mb-[25px]">
                             <div class="w-full flex items-center justify-start mt-[10px] mb-[30px]">
-                                <div class="num-card pr-[50px] mr-[50px] border-r-2 border-slate-200">
-                                    <div class="icon img-contain">
-                                        <img [src]="imgTesti1" alt="" />
+                                <div
+                                    class="flex items-start justify-center flex-col pr-[50px] mr-[50px] border-r-2 border-slate-200">
+                                    <div class="icon img-contain text-center bg-nucleo rounded-full p-4">
+                                        <i class="fa-solid fa-users text-white text-[30px]"></i>
                                     </div>
-                                    <h2 class="text-verdeCheck text-[30px] font-bold">2,5M+</h2>
+                                    <h2 class="text-verdeCheck text-[30px] font-bold">10M+</h2>
                                     <p class="text-[10px] text-slate-500">
-                                        Downloaded and <br /> Installation
+                                        Usuarios utilizan nuestro<br /> servicio a diario.
                                     </p>
                                 </div>
-                                <div class="num-card">
-                                    <div class="icon img-contain">
-                                        <img [src]="imgTesti2" alt="" />
+                                <div class="flex items-start justify-center flex-col">
+                                    <div class="icon img-contain text-center bg-nucleo rounded-full p-4">
+                                        <i class="fa-regular fa-thumbs-up text-white text-[30px]"></i>
                                     </div>
-                                    <h2 class="text-verdeCheck text-[30px] font-bold">4.8/5</h2>
-                                    <div class="text-[10px] mb-[5px] text-stars">
+                                    <h2 class="text-verdeCheck text-[30px] font-bold">4.7/5</h2>
+                                    <div class="text-[10px] mb-[5px] text-stars text-center">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                     </div>
-                                    <p class="text-[10px] text-slate-500">Based on 1,258 reviews</p>
+                                    <p class="text-[10px] text-slate-500">
+                                        Clasificacion en google
+                                    </p>
                                 </div>
                             </div>
-                            <app-button-gral textButton="Más testimonios"></app-button-gral>
+                            <a [href]="buttonHref" target="_blank" rel="noreferrer">
+                                <app-button-gral textButton="Más testimonios" ttipeButton="primary"></app-button-gral>
+                            </a>
                         </div>
                     </div>
                 </div>

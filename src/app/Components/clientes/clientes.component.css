@@ -2,3 +2,7 @@
   animation: slider 35s linear infinite;
   width: calc(150px * 24);
 }
+
+.contentSlider:hover {
+  animation-play-state: paused;
+}

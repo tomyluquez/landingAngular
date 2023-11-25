@@ -1,10 +1,5 @@
 import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
-
-interface elements {
-  id: number;
-  text: string;
-  href: string;
-}
+import { Buttons, Elements } from 'src/app/interfaces/interfaces';
 
 @Component({
   selector: 'app-navbar',
@@ -12,7 +7,8 @@ interface elements {
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent implements OnInit {
-  arrayElements: elements[] = [];
+  arrayElements: Elements[] = [];
+  arrayButtons: Buttons[] = [];
   imgLogo = '../../../assets/img/Nucleo-img/Nucleo_Check_Logovariables-02.png';
   textButton = 'Agenda una demo';
   isOpen = false;
@@ -52,6 +48,18 @@ export class NavbarComponent implements OnInit {
         id: 7,
         text: 'Faq',
         href: '#faq',
+      },
+    ];
+    this.arrayButtons = [
+      {
+        href: 'https://prod.nucleocheck.com/#/login',
+        text: 'Iniciar Sesion',
+        tipe: 'secondary',
+      },
+      {
+        href: this.linkCalendly,
+        text: 'Agendá una demo',
+        tipe: 'primary',
       },
     ];
 

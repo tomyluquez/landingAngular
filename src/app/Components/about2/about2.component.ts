@@ -9,10 +9,10 @@ import { Elements } from '../about/about.component';
 export class About2Component {
   imgAbout = '../../../assets/img/Images/ipad.png';
   aboutBubles = '../assets/img/Images/about_s4_bubble2.png';
-  title = 'Monitor de cocina. Ingresa y organiza los pedidos';
+  title = 'Monitor de cocina';
   subTitle = 'Comandas virtuales';
   description =
-    'Con el monitor de cocina podrás ingresar todos los pedidos sin necesidad de imprimir. Teniendo un dispositivo en la cocina puedes encargarte de todo sin interrumpir las tareas';
+    'Ingresa y organiza los pedidos. Con el monitor de cocina podrás ingresar todos los pedidos sin necesidad de imprimir. Teniendo un dispositivo en la cocina puedes encargarte de todo sin interrumpir las tareas';
   arrayElements: Elements[] = [];
   ngOnInit() {
     this.arrayElements = [
