@@ -4,9 +4,10 @@
         <div>
             <!-- Botones para seleccionar opciones de precios -->
             <div class="flex items-center justify-center gap-2 my-[40px]">
-                <div class="text-slate-500 cursor-pointer rounded relative bg-white drop-shadow-xl p-4 w-[150px] border-2 border-slate-400 hover:bg-nucleo hover:text-white hover:border-white duration-300"
+                <div class="cursor-pointer rounded relative drop-shadow-xl p-4 w-[150px] hover:bg-nucleo hover:text-white hover:border-white duration-300"
                     *ngFor="let option of arrayTypePrices" (click)="changeCheckbox(option.descuento)"
-                    [ngClass]="{'bg-verdeCheck text-white border-white' : checkedInput === option.descuento}">
+                    [ngClass]="{'bg-verdeCheck text-white border-white' : checkedInput === option.descuento}"
+                    [ngClass]="{'text-slate-500 bg-white border-2 border-slate-400 ' : checkedInput !== option.descuento}">
                     {{option.title}}
                     <div *ngIf="option.descuento !== 0"
                         class="absolute border-2 border-nucleo top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-nucleo rounded px-2">
