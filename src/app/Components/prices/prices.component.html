@@ -6,7 +6,7 @@
             <div class="flex items-center justify-center gap-2 my-[40px]">
                 <div class="cursor-pointer rounded relative drop-shadow-xl p-4 w-[150px] hover:bg-nucleo hover:text-white hover:border-white duration-300"
                     *ngFor="let option of arrayTypePrices" (click)="changeCheckbox(option.descuento)"
-                    [ngClass]="{'bg-verdeCheck text-white border-white' : checkedInput === option.descuento}"
+                    [ngClass]="{'bg-nucleo text-white border-white' : checkedInput === option.descuento}"
                     [ngClass]="{'text-slate-500 bg-white border-2 border-slate-400 ' : checkedInput !== option.descuento}">
                     {{option.title}}
                     <div *ngIf="option.descuento !== 0"
