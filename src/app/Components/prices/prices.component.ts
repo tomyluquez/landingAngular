@@ -159,13 +159,15 @@ export class PricesComponent {
   }
 
   calculatePlan(price: number) {
-    if (this.checkedInput === 0) return price;
+    if (this.checkedInput === 0) return price.toLocaleString();
     const selectedType = this.arrayTypePrices.find(
       (type) => type.descuento === this.checkedInput,
     );
 
     if (selectedType && selectedType.descuento) {
-      return price - (price * selectedType?.descuento) / 100; // Calcula el descuento
+      const abono = price - (price * selectedType?.descuento) / 100;
+      const formattedAbono = abono.toLocaleString();
+      return formattedAbono; // Calcula el descuento
     } else {
       return 0; // No hay descuento si no se encuentra el tipo seleccionado o no hay precios definidos
     }
@@ -179,7 +181,8 @@ export class PricesComponent {
     if (selectedType && selectedType.descuento) {
       const abono = price - (price * selectedType?.descuento) / 100;
       const total = abono * selectedType.meses;
-      return `${total} por ${selectedType.meses} meses`; // Calcula el descuento
+      const formattedTotal = total.toLocaleString();
+      return `${formattedTotal} por ${selectedType.meses} meses`; // Calcula el descuento
     } else {
       return 0; // No hay descuento si no se encuentra el tipo seleccionado o no hay precios definidos
     }

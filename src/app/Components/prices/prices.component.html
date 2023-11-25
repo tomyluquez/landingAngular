@@ -4,7 +4,8 @@
         <div>
             <!-- Botones para seleccionar opciones de precios -->
             <div class="flex items-center justify-center gap-2 my-[40px]">
-                <div class="cursor-pointer rounded relative drop-shadow-xl p-4 w-[150px] hover:bg-verdeCheck hover:text-white hover:border-white duration-300"
+                <!--Cada uno de los botones, cambia el valor de la variable checkedInput y el estilo-->
+                <div class="cursor-pointer rounded relative drop-shadow-xl p-4 w-[150px]"
                     *ngFor="let option of arrayTypePrices" (click)="changeCheckbox(option.descuento)"
                     [ngClass]="{'bg-nucleo text-white border-white' : checkedInput === option.descuento, 'text-slate-500 bg-white border-2 border-slate-400 ' : checkedInput !== option.descuento}">
                     {{option.title}}
@@ -22,6 +23,7 @@
                     class="flex flex-col items-start shadowCustom justify-start p-4 w-full md:w-[350px] md:h-[400px] rounded-xl text-slate-500 relative"
                     [ngClass]="{'text-white ': plan.elegido}"
                     [ngStyle]="{'background-color': plan.elegido ? '#90C447' : '#fafafa'}">
+                    <!--Estilos para el plan mas elegido-->
                     <div *ngIf="plan.elegido"
                         class="absolute elMasElegido top-[-5px] right-[-5px] w-[105px] h-[105px] px-4 py-2 text-verdeCheck z-[1] overflow-hidden">
                         <div class="rotate-45 shadowCustom bg-white w-[142px] absolute left-[-2px] top-[10px]">
@@ -29,6 +31,7 @@
                             <div class="text-[15px] text-center">elegido</div>
                         </div>
                     </div>
+
                     <div class="flex items-center justify-center gap-2 mb-[20px]">
                         <span class="font-bold text-4xl">${{calculatePlan(plan.price)}}</span>
                         <span>/mes</span>
