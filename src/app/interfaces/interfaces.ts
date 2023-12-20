@@ -17,8 +17,8 @@ export interface Clients {
 }
 
 export interface FormElements {
-  id: number;
-  icon: string;
+  id?: number;
+  icon?: string;
   text: string;
   href?: string | null;
 }
@@ -36,4 +36,10 @@ export interface Price {
   title?: string;
   descuento: number;
   meses: number;
+}
+
+export interface Faqs {
+  id: number;
+  question: string;
+  answer: string;
 }

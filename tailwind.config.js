@@ -4,8 +4,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        verdeNucleo: '#7EA940',
         nucleo: '#90C447',
-        verdeCheck: '#7ea940',
+        verdeCheck: '#506F20',
         bgNav: '#E8EEE0',
         bgIcons: '#EEF4F8',
         verdeClaro: '#e8eee0',

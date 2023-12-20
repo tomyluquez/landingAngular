@@ -4,27 +4,28 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarTopComponent } from './Components/navbar-top/navbar-top.component';
-import { NavbarComponent } from './Components/navbar/navbar.component';
+import { NavbarComponent } from './Layouts/navbar/navbar.component';
 import { ButtonGralComponent } from './Components/Reutils/button-gral/button-gral.component';
-import { HeroComponent } from './Components/hero/hero.component';
+import { HeroComponent } from './Layouts/hero/hero.component';
 import { TitlesComponent } from './Components/Reutils/titles/titles.component';
-import { ClientesComponent } from './Components/clientes/clientes.component';
-import { FeaturesComponent } from './Components/features/features.component';
-import { AboutComponent } from './Components/about/about.component';
+import { ClientesComponent } from './Layouts/clientes/clientes.component';
+import { FeaturesComponent } from './Layouts/features/features.component';
+import { AboutComponent } from './Layouts/about/about.component';
 import { IconTextComponent } from './Components/Reutils/icon-text/icon-text.component';
-import { About2Component } from './Components/about2/about2.component';
-import { IntegracionesComponent } from './Components/integraciones/integraciones.component';
-import { ScreenshotsComponent } from './Components/screenshots/screenshots.component';
-import { TestimonialsComponent } from './Components/testimonials/testimonials.component';
-import { PricesComponent } from './Components/prices/prices.component';
-import { FaqsComponent } from './Components/faqs/faqs.component';
-import { RedesComponent } from './Components/redes/redes.component';
-import { FooterComponent } from './Components/footer/footer.component';
+import { About2Component } from './Layouts/about2/about2.component';
+import { IntegracionesComponent } from './Layouts/integraciones/integraciones.component';
+import { TestimonialsComponent } from './Layouts/testimonials/testimonials.component';
+import { PricesComponent } from './Layouts/prices/prices.component';
+import { FaqsComponent } from './Layouts/faqs/faqs.component';
+import { RedesComponent } from './Layouts/redes/redes.component';
+import { FooterComponent } from './Layouts/footer/footer.component';
 import { ButtonScrollComponent } from './Components/button-scroll/button-scroll.component';
 import { PreloadingComponent } from './Components/preloading/preloading.component';
-import { FormContactComponent } from './Components/form-contact/form-contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { DemoComponent } from './Components/demo/demo.component';
+import { DemoComponent } from './Layouts/demo/demo.component';
+import { SelectDiscountComponent } from './Components/Reutils/select-discount/select-discount.component';
+import { MonthlyPaymentsComponent } from './Components/Reutils/monthly-payments/monthly-payments.component';
+import { AcordeonComponent } from './Components/acordeon/acordeon.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,6 @@ import { DemoComponent } from './Components/demo/demo.component';
     IconTextComponent,
     About2Component,
     IntegracionesComponent,
-    ScreenshotsComponent,
     TestimonialsComponent,
     PricesComponent,
     FaqsComponent,
@@ -48,10 +48,12 @@ import { DemoComponent } from './Components/demo/demo.component';
     FooterComponent,
     ButtonScrollComponent,
     PreloadingComponent,
-    FormContactComponent,
     DemoComponent,
+    SelectDiscountComponent,
+    MonthlyPaymentsComponent,
+    AcordeonComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })

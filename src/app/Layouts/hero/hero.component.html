@@ -1,0 +1,33 @@
+<main>
+    <section data-scroll-index="0" class="relative py-[60px] overflow-hidden ">
+        <div class="flex items-center justify-center lg:mb-[50px]">
+            <div class="px-[15px] max-w-[1170px] z-10 ">
+                <div class="flex flex-wrap items-start justify-center">
+                    <section id="hero" class="lg:w-[50%] w-full">
+                        <div>
+                            <app-titles>
+                                <h1 title>{{title}}</h1>
+                                <span subTitle>{{subTitle}}</span>
+                                <h3 description>{{description}}</h3>
+                            </app-titles>
+                            <div class="flex items-center justify-start gap-4">
+                                <a [href]="linkCalendly"
+                                    className="btn buton rounded-pill bg-blue4 fw-bold text-white me-4" target="_blank"
+                                    rel="noreferrer">
+                                    <app-button-gral textButton="Quiero agendar una demo"></app-button-gral>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="divImg">
+                        <div>
+                            <img [src]="imgHero" alt="imagen principal" class="m-w-full rounded" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img [src]="imgHero2" alt="burbujas" class="bubble" />
+        </div>
+        <img [src]="imgHero3" alt="fondo movil" class="wave">
+    </section>
+</main>

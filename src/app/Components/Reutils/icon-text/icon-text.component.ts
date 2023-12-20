@@ -1,16 +1,15 @@
 import { Component, Input } from '@angular/core';
-import { Elements } from '../../about/about.component';
+import { FormElements } from 'src/app/interfaces/interfaces';
 
 @Component({
   selector: 'app-icon-text',
   templateUrl: './icon-text.component.html',
-  styleUrls: ['./icon-text.component.css']
+  styleUrls: ['./icon-text.component.css'],
 })
 export class IconTextComponent {
-  @Input() element: Elements = {
+  @Input() element: FormElements = {
     id: 0,
     icon: '',
-    text: ''
+    text: '',
   };
-
 }
