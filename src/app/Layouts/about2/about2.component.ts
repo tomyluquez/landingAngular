@@ -7,7 +7,7 @@ import { Elements } from '../about/about.component';
   styleUrls: ['./about2.component.css'],
 })
 export class About2Component {
-  imgAbout = '../../../assets/img/Images/ipad.png';
+  imgAbout = '../../../assets/img/Images/tablet.webp';
   aboutBubles = '../assets/img/Images/about_s4_bubble2.png';
   title = 'Monitor de cocina';
   subTitle = 'Comandas virtuales';

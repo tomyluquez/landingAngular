@@ -13,7 +13,7 @@ export interface Elements {
   styleUrls: ['./about.component.css'],
 })
 export class AboutComponent {
-  imgAbout = '../../../assets/img/Images/2mobiles.png';
+  imgAbout = '../../../assets/img/Images/moviles.webp';
   aboutBubles = '../../../assets/img/Images/about_s4_bubble.png';
   aboutWave = '../../../assets/img/Images/about_s4_wave.png';
   aboutLines = '../assets/img/Images/about_s4_lines.png';

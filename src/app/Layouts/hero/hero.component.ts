@@ -12,7 +12,7 @@ interface optionsHero {
   styleUrls: ['./hero.component.css'],
 })
 export class HeroComponent {
-  imgHero = '../../../assets/img/Images/header_4.png';
+  imgHero = '../../../assets/img/Images/devices.webp';
   imgHero2 = '../../../assets/img/Images/header_4_bubble.png';
   imgHero3 = '../assets/img/Images/header_4_wave.png';
   subTitle = 'Súmate a la revolución gastronómica';
