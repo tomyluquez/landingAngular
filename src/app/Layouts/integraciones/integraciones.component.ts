@@ -22,27 +22,27 @@ export class IntegracionesComponent {
     this.arrayApps = [
       {
         id: 6,
-        src: '../assets/img/Images/domo.png',
+        src: '../assets/img/Images/cd.webp',
       },
       {
         id: 3,
-        src: '../assets/img/Images/intg3.png',
+        src: '../assets/img/Images/mp.webp',
       },
       {
         id: 1,
-        src: '../assets/img/Images/intg1.png',
+        src: '../assets/img/Images/peya.webp',
       },
       {
         id: 2,
-        src: '../assets/img/Images/intg2.png',
+        src: '../assets/img/Images/rappi.webp',
       },
       {
         id: 4,
-        src: '../assets/img/Images/intg4.png',
+        src: '../assets/img/Images/masDeli.webp',
       },
       {
         id: 5,
-        src: '../assets/img/Images/intg5.png',
+        src: '../assets/img/Images/uber.webp',
       },
     ];
   }
