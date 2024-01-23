@@ -33,6 +33,10 @@ export class IntegracionesComponent {
         src: '../assets/img/Images/peya.webp',
       },
       {
+        id: 7,
+        src: '../assets/img/Images/alax.webp',
+      },
+      {
         id: 2,
         src: '../assets/img/Images/rappi.webp',
       },
