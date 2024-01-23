@@ -145,12 +145,12 @@ export class PricesComponent {
       },
       {
         title: 'Semestral',
-        descuento: 20,
+        descuento: 10,
         meses: 6,
       },
       {
         title: 'Anual',
-        descuento: 30,
+        descuento: 15,
         meses: 12,
       },
     ];
@@ -160,36 +160,5 @@ export class PricesComponent {
 
   changeCheckbox(value: number) {
     this.checkedInput.set(value);
-  }
-
-  calculatePlan(price: number) {
-    if (this.checkedInput() === 0) return price.toLocaleString();
-
-    const selectedType = this.arrayTypePrices.find(
-      (type) => type.descuento === this.checkedInput(),
-    );
-
-    if (selectedType && selectedType.descuento) {
-      const abono = price - (price * selectedType?.descuento) / 100;
-      const formattedAbono = abono.toLocaleString();
-      return formattedAbono; // Calcula el descuento
-    } else {
-      return 0; // No hay descuento si no se encuentra el tipo seleccionado o no hay precios definidos
-    }
-  }
-
-  calculatePrice(price: number) {
-    const selectedType = this.arrayTypePrices.find(
-      (type) => type.descuento === this.checkedInput(),
-    );
-
-    if (selectedType && selectedType.descuento) {
-      const abono = price - (price * selectedType?.descuento) / 100;
-      const total = abono * selectedType.meses;
-      const formattedTotal = total.toLocaleString();
-      return `${formattedTotal} por ${selectedType.meses} meses`; // Calcula el descuento
-    } else {
-      return 0; // No hay descuento si no se encuentra el tipo seleccionado o no hay precios definidos
-    }
   }
 }

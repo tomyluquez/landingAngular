@@ -16,10 +16,33 @@ export class MonthlyPaymentsComponent {
   }
 
   calculatePlan(price: number) {
-    return this.prices.calculatePlan(price);
+    if (this.checkedInput === 0) return price.toLocaleString();
+
+    const selectedType = this.prices.arrayTypePrices.find(
+      (type) => type.descuento === this.checkedInput,
+    );
+
+    if (selectedType && selectedType.descuento) {
+      const abono = price - (price * selectedType?.descuento) / 100;
+      const formattedAbono = abono.toLocaleString();
+      return formattedAbono; // Calcula el descuento
+    } else {
+      return 0; // No hay descuento si no se encuentra el tipo seleccionado o no hay precios definidos
+    }
   }
 
   calculatePrice(price: number) {
-    return this.prices.calculatePrice(price);
+    const selectedType = this.prices.arrayTypePrices.find(
+      (type) => type.descuento === this.checkedInput,
+    );
+
+    if (selectedType && selectedType.descuento) {
+      const abono = price - (price * selectedType?.descuento) / 100;
+      const total = abono * selectedType.meses;
+      const formattedTotal = total.toLocaleString();
+      return `${formattedTotal} por ${selectedType.meses} meses`; // Calcula el descuento
+    } else {
+      return 0; // No hay descuento si no se encuentra el tipo seleccionado o no hay precios definidos
+    }
   }
 }
