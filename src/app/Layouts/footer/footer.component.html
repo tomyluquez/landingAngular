@@ -37,7 +37,7 @@
                 </div>
             </div>
         </nav>
-        <footer class="copywrite text-center">
+        <footer class="flex flex-col gap-[20px] copywrite text-center">
             <small class="small">
                 © {{year}}
                 <a href="http://www.nucleoit.com.ar" target="_blank" class="fw-bold text-decoration-underline">
@@ -45,6 +45,10 @@
                 </a>
                 . Todos los derechos reservados. 2009 - {{year}}
             </small>
+            <div class="flex flex-col items-center">
+                <small>Desarrollado por</small>
+                <img [src]="imgFullLogo" alt="logo nucleo it">
+            </div>
         </footer>
     </div>
     <img [src]="imgHero3" alt="" class="wave mt-[60px]" />

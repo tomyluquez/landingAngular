@@ -23,6 +23,7 @@ export class FooterComponent {
   description = 'Contacta con nuestros asesores comerciales.';
   imgHero3 = '../assets/img/Images/header_4_wave.png';
   imgLogo = '../../../assets/img/Nucleo-img/Nucleo_Check_Logovariables-02.png';
+  imgFullLogo = '../../../assets/img/Nucleo-img/logoNucleoIT.webp';
   arrayForm: FormElements[] = [];
   arrayLiFooter: FormElements[] = [];
   element: any;
