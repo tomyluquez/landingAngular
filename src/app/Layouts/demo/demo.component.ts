@@ -10,7 +10,7 @@ export class DemoComponent {
   title =
     'Ingresa a la mejor solución para los negocios gastronómicos de habla hispana';
   description =
-    'Obtén una demostración personalizada y gratuita en vivo de nuestros asesores, sin compromiso alguno';
+    'Obtén una demostración personalizada y gratuita en vivo de nuestros asesores, sin compromiso alguno.';
   month!: string;
   year!: string;
   linkCalendly!: string;

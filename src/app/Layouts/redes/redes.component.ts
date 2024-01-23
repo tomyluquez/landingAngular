@@ -48,7 +48,7 @@ export class RedesComponent {
         href: 'https://www.youtube.com/nucleoit',
         icon: 'fab fa-youtube',
         title: 'Youtube',
-        text: 'Videos de presentación + tutoriales',
+        text: 'Videos de presentación + Tutoriales',
       },
       {
         id: 3,

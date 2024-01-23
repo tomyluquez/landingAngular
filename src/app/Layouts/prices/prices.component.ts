@@ -13,7 +13,7 @@ export class PricesComponent {
   subTitle = 'Planes Núcleo Check';
   title!: string;
   description =
-    'Debajo podes elegir algun otro plan que se adapte a tus necesidades';
+    'Debajo podes elegir algun otro plan que se adapte a tus necesidades.';
   checkedInput = signal(0);
 
   ngOnInit(): void {

@@ -37,7 +37,7 @@ export class FooterComponent {
       {
         id: 4,
         icon: 'fa-brands fa-whatsapp',
-        text: 'Whatsapp: 11 3277-7917',
+        text: 'WhatsApp: 11 3277-7917',
         href: 'https://api.whatsapp.com/send?phone=5491132777917',
       },
       {
@@ -120,7 +120,7 @@ export class FooterComponent {
       filteredElements = this.arrayForm.filter((element) => {
         return (
           element.text.toLowerCase().includes(location as string) ||
-          element.text.includes('Whatsapp') ||
+          element.text.includes('WhatsApp') ||
           element.text.includes('Mail') ||
           element.text.includes('Direccion') ||
           element.text.includes('Buenos Aires')
