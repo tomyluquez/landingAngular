@@ -44,7 +44,7 @@ export class PricesComponent {
           {
             id: 4,
             icon: 'fa-solid fa-xmark text-red-500',
-            text: 'Intergación con apps de delivery',
+            text: 'Integración con apps de delivery',
             includes: false,
           },
           {
@@ -83,7 +83,7 @@ export class PricesComponent {
           {
             id: 4,
             icon: 'fa-solid fa-xmark text-red-500',
-            text: 'Intergación con apps de delivery',
+            text: 'Integración con apps de delivery',
             includes: false,
           },
           {
@@ -122,7 +122,7 @@ export class PricesComponent {
           {
             id: 4,
             icon: 'fa-solid fa-check',
-            text: 'Intergación con apps de delivery',
+            text: 'Integración con apps de delivery',
             includes: true,
           },
           {
