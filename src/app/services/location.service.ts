@@ -42,7 +42,7 @@ export class LocationService {
 
   // getLocation(coords: any): Promise<any> {
   //   return fetch(
-  //     `${environment.API_URL}${coords.latitude}+${coords.longitude}${environment.API_KEY}`,
+  //     `${environment.API_LOCATION_URL}${coords.latitude}+${coords.longitude}${environment.API_LOCATION_KEY}`,
   //   )
   //     .then((res) => res.json())
   //     .then((data) => (this.userLocation = data.results[0].components.state));

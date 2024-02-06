@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { NavbarTopComponent } from './Components/navbar-top/navbar-top.component';
 import { NavbarComponent } from './Layouts/navbar/navbar.component';
@@ -21,7 +22,6 @@ import { RedesComponent } from './Layouts/redes/redes.component';
 import { FooterComponent } from './Layouts/footer/footer.component';
 import { ButtonScrollComponent } from './Components/button-scroll/button-scroll.component';
 import { PreloadingComponent } from './Components/preloading/preloading.component';
-import { ReactiveFormsModule } from '@angular/forms';
 import { DemoComponent } from './Layouts/demo/demo.component';
 import { SelectDiscountComponent } from './Components/Reutils/select-discount/select-discount.component';
 import { MonthlyPaymentsComponent } from './Components/Reutils/monthly-payments/monthly-payments.component';
@@ -53,7 +53,7 @@ import { AcordeonComponent } from './Components/acordeon/acordeon.component';
     MonthlyPaymentsComponent,
     AcordeonComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

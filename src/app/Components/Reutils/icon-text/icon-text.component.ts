@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { FormElements } from 'src/app/interfaces/interfaces';
+import { FormElements, ItemsPlan } from 'src/app/interfaces/interfaces';
 
 @Component({
   selector: 'app-icon-text',
@@ -7,9 +7,5 @@ import { FormElements } from 'src/app/interfaces/interfaces';
   styleUrls: ['./icon-text.component.css'],
 })
 export class IconTextComponent {
-  @Input() element: FormElements = {
-    id: 0,
-    icon: '',
-    text: '',
-  };
+  @Input() element!: FormElements | ItemsPlan;
 }

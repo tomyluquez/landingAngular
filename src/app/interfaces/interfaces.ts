@@ -25,21 +25,29 @@ export interface FormElements {
 
 export interface Planes {
   id: number;
-  title: string;
+  namePlan: string;
   price: number;
-  ul: Array<any>;
-  textButton: string;
-  elegido: boolean;
+  items: Array<ItemsPlan>;
+  textButton?: string;
+  better: boolean;
 }
 
-export interface Price {
-  title?: string;
-  descuento: number;
-  meses: number;
+export interface Discount {
+  id: string;
+  type: string;
+  discount: number;
+  months: number;
 }
 
 export interface Faqs {
   id: number;
   question: string;
   answer: string;
+}
+
+export interface ItemsPlan {
+  id: number;
+  text: string;
+  includes: boolean;
+  icon?: string;
 }
