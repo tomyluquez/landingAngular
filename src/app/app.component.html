@@ -1,8 +1,8 @@
 <!-- <app-preloading></app-preloading> -->
 <!-- <app-navbar-top></app-navbar-top> -->
 <app-button-scroll />
-<app-navbar />
-<app-hero />
+<app-navbar [isFreeTrailMode]="isFreeTrailMode" />
+<app-hero [isFreeTrailMode]="isFreeTrailMode" />
 <app-clientes />
 <app-features />
 <app-about />
@@ -10,7 +10,7 @@
 <app-integraciones />
 <app-demo />
 <app-testimonials />
-<app-prices />
+<app-prices [isFreeTrailMode]="isFreeTrailMode" />
 <app-faqs />
 <app-redes />
 <app-footer />

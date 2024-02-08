@@ -14,11 +14,16 @@
 <p class="text-left" *ngIf="checkedInput !== 0">${{calculatePrice(plan.price)}}</p>
 <h4 class="font-bold text-[30px] mb-[40px] text-left">{{plan.namePlan}}</h4>
 
-<div class="flex flex-col items-start justify-center gap-2 leading-3">
+<div class="flex flex-col items-start justify-center gap-2 leading-3 mb-4">
     <div *ngFor="let element of plan.items">
-        <app-icon-text [element]="element"
+        <app-icon-text [element]="element.text"
+            [icon]="element.includes ? 'fa-solid fa-check' : 'fa-solid fa-xmark text-red-500'"
             [ngClass]="{'text-white': plan.better && element.includes, 'text-gray-300' : !element.includes, 'font-bold': element.includes}"
             class="text-left">
         </app-icon-text>
     </div>
 </div>
+
+<a *ngIf="isFreeTrailMode && plan.namePlan === 'Plan Inicial'" [href]="linkFreeTrail" target="_blank" rel="noreferrer">
+    <app-button-gral textButton="Prueba gratis"></app-button-gral>
+</a>

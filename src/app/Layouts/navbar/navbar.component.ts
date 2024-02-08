@@ -1,4 +1,5 @@
-import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef, Input } from '@angular/core';
+import { environment } from 'src/app/Environments/environments';
 import { Buttons, Elements } from 'src/app/interfaces/interfaces';
 
 @Component({
@@ -7,16 +8,15 @@ import { Buttons, Elements } from 'src/app/interfaces/interfaces';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent implements OnInit {
-  arrayElements: Elements[] = [];
-  arrayButtons: Buttons[] = [];
-  imgLogo = '../../../assets/img/Nucleo-img/Nucleo_Check_Logovariables-02.png';
-  textButton = 'Agenda una demo';
-  isOpen = false;
-  month!: string;
-  year!: string;
-  linkCalendly!: string;
+  @Input() isFreeTrailMode!: boolean;
 
+  arrayElements: Elements[] = [];
+  imgLogo = '../../../assets/img/Nucleo-img/Nucleo_Check_Logovariables-02.png';
+  isOpen = false;
   scrollPosition: number = 0;
+  linkCalendly = environment.LINK_CALENDLY;
+  linkFreeTrail = environment.LINL_FREE_TRAIL;
+  linkNucleoCheck = environment.LINK_NUCLEO_CHECK;
 
   constructor(private cdr: ChangeDetectorRef) {}
 
@@ -25,9 +25,6 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.month = new Date().toLocaleString('default', { month: 'long' });
-    this.year = new Date().getFullYear().toString();
-    this.linkCalendly = `https://calendly.com/nucleoit/demostracion-online?month=${this.year}-${this.month}`;
     this.arrayElements = [
       {
         id: 2,
@@ -48,18 +45,6 @@ export class NavbarComponent implements OnInit {
         id: 7,
         text: 'Faq',
         href: '#faq',
-      },
-    ];
-    this.arrayButtons = [
-      {
-        href: 'https://prod.nucleocheck.com/#/login',
-        text: 'Iniciar Sesión',
-        tipe: 'secondary',
-      },
-      {
-        href: this.linkCalendly,
-        text: 'Agendá una demo',
-        tipe: 'primary',
       },
     ];
 

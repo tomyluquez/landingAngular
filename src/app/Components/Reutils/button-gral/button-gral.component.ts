@@ -7,5 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class ButtonGralComponent {
   @Input() textButton?: string;
-  @Input() tipeButton: string = 'primary';
+  @Input() typeButton: string = 'primary';
 }

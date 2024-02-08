@@ -7,7 +7,7 @@
         </app-titles>
         <div>
             <!-- Botones para seleccionar opciones de precios -->
-            <div class="flex items-center justify-center gap-2 mt-[110px] mb-[40px]">
+            <div class="flex items-center justify-center gap-2 mt-[50px] mb-[40px]">
                 <!--Cada uno de los botones, cambia el valor de la variable checkedInput y el estilo-->
                 <div class="cursor-pointer rounded relative drop-shadow-xl p-4 w-[150px]"
                     *ngFor="let option of arrayDiscounts$" (click)="changeCheckbox(option.discount)"
@@ -27,7 +27,7 @@
                     [ngClass]="{'text-white ': plan.better}"
                     [ngStyle]="{'background-color': plan.better ? '#90C447' : '#fafafa'}">
 
-                    <app-monthly-payments [plan]="plan" />
+                    <app-monthly-payments [plan]="plan" [isFreeTrailMode]="isFreeTrailMode" />
 
                 </div>
             </div>

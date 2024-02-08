@@ -1,6 +1,7 @@
 import { Component, Input, effect } from '@angular/core';
 import { Planes } from 'src/app/interfaces/interfaces';
 import { PricesComponent } from '../../../Layouts/prices/prices.component';
+import { environment } from 'src/app/Environments/environments';
 
 @Component({
   selector: 'app-monthly-payments',
@@ -9,7 +10,9 @@ import { PricesComponent } from '../../../Layouts/prices/prices.component';
 })
 export class MonthlyPaymentsComponent {
   @Input() plan!: Planes;
+  @Input() isFreeTrailMode!: boolean;
   checkedInput: number = 0;
+  linkFreeTrail = environment.LINL_FREE_TRAIL;
 
   constructor(private prices: PricesComponent) {
     effect(() => (this.checkedInput = this.prices.checkedInput()));

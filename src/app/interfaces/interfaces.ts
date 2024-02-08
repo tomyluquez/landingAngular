@@ -8,6 +8,7 @@ export interface Buttons {
   href: string;
   text: string;
   tipe: string;
+  isVisible: boolean;
 }
 
 export interface Clients {
@@ -50,4 +51,9 @@ export interface ItemsPlan {
   text: string;
   includes: boolean;
   icon?: string;
+}
+
+export interface Settings {
+  id: string;
+  isFreeTrailMode: boolean;
 }

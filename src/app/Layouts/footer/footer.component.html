@@ -11,10 +11,12 @@
             <div class="flex flex-wrap pl-[25px] lg:pl-[0px] lg:flex-row items-start justify-center gap-2 mx-auto">
                 <ng-container *ngFor="let element of arrayForm">
                     <a *ngIf="element.href; else noHref" [href]="element.href" target="_blank" class="w-[280px]">
-                        <app-icon-text [element]="element"></app-icon-text>
+                        <app-icon-text [element]="element.text"
+                            [icon]="element.icon ? element.icon : 'fa-check'"></app-icon-text>
                     </a>
                     <ng-template #noHref>
-                        <app-icon-text class="w-[280px]" [element]="element"></app-icon-text>
+                        <app-icon-text class="w-[280px]" [element]="element.text"
+                            [icon]="element.icon ? element.icon : 'fa-check'"></app-icon-text>
                     </ng-template>
                 </ng-container>
             </div>

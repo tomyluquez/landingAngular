@@ -5,4 +5,8 @@ export const environment = {
   API_DB_URL: 'http://localhost:5050',
   URL_PLANS: '/api/plans',
   URL_DISCOUNTS: '/api/discounts',
+  URL_SETTINGS: '/api/settings',
+  LINK_CALENDLY: 'https://calendly.com/nucleoit/demostracion-online',
+  LINL_FREE_TRAIL: '#',
+  LINK_NUCLEO_CHECK: 'https://prod.nucleocheck.com/',
 };

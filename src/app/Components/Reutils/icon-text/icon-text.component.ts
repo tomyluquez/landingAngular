@@ -7,5 +7,6 @@ import { FormElements, ItemsPlan } from 'src/app/interfaces/interfaces';
   styleUrls: ['./icon-text.component.css'],
 })
 export class IconTextComponent {
-  @Input() element!: FormElements | ItemsPlan;
+  @Input({ required: true }) element!: string;
+  @Input({ required: true }) icon!: string;
 }

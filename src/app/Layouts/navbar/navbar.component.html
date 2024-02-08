@@ -17,8 +17,14 @@
                     element.text.toUpperCase()}}</a>
             </li>
             <div class="flex items-center justify-center gap-2 mt-2 xl:mt-0">
-                <a *ngFor="let button of arrayButtons" [href]="button.href" target="_blank" rel="noreferrer">
-                    <app-button-gral [textButton]="button.text" [tipeButton]="button.tipe"></app-button-gral>
+                <a [href]="linkNucleoCheck" target="_blank" rel="noreferrer">
+                    <app-button-gral textButton="Iniciar Sesión" typeButton="secondary"></app-button-gral>
+                </a>
+                <a *ngIf="isFreeTrailMode" [href]="linkFreeTrail" target="_blank" rel="noreferrer">
+                    <app-button-gral textButton="Prueba gratis"></app-button-gral>
+                </a>
+                <a *ngIf="!isFreeTrailMode" [href]="linkCalendly" target="_blank" rel="noreferrer">
+                    <app-button-gral textButton="Agendá una demo"></app-button-gral>
                 </a>
             </div>
 
