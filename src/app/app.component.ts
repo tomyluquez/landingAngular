@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { SettingsService } from './services/settings.service';
 
 @Component({
@@ -6,11 +6,13 @@ import { SettingsService } from './services/settings.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
-  isFreeTrailMode!: boolean;
+export class AppComponent implements OnInit {
+  isFreeTrailMode: boolean = true;
 
-  constructor(private settingsServices: SettingsService) {
-    this.settingsServices.getSettings().subscribe(({ settings }) => {
+  constructor(private settingsService: SettingsService) {}
+
+  ngOnInit(): void {
+    this.settingsService.getSettings().subscribe(({ settings }) => {
       this.isFreeTrailMode = settings.isFreeTrailMode;
     });
   }

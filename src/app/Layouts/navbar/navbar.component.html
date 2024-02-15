@@ -20,9 +20,7 @@
                 <a [href]="linkNucleoCheck" target="_blank" rel="noreferrer">
                     <app-button-gral textButton="Iniciar Sesión" typeButton="secondary"></app-button-gral>
                 </a>
-                <a *ngIf="isFreeTrailMode" [href]="linkFreeTrail" target="_blank" rel="noreferrer">
-                    <app-button-gral textButton="Prueba gratis"></app-button-gral>
-                </a>
+                <div *ngIf="isFreeTrailMode" class="primaryButton" data-tf-live="01HPQ3AXQD7KRXG9EKFBGC368P"></div>
                 <a *ngIf="!isFreeTrailMode" [href]="linkCalendly" target="_blank" rel="noreferrer">
                     <app-button-gral textButton="Agendá una demo"></app-button-gral>
                 </a>

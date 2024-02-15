@@ -21,11 +21,13 @@ import { FaqsComponent } from './Layouts/faqs/faqs.component';
 import { RedesComponent } from './Layouts/redes/redes.component';
 import { FooterComponent } from './Layouts/footer/footer.component';
 import { ButtonScrollComponent } from './Components/button-scroll/button-scroll.component';
-import { PreloadingComponent } from './Components/preloading/preloading.component';
+import { PreloadingComponent } from './Components/loaders/preloading/preloading.component';
 import { DemoComponent } from './Layouts/demo/demo.component';
 import { SelectDiscountComponent } from './Components/Reutils/select-discount/select-discount.component';
 import { MonthlyPaymentsComponent } from './Components/Reutils/monthly-payments/monthly-payments.component';
 import { AcordeonComponent } from './Components/acordeon/acordeon.component';
+import { SkeletonPricesComponent } from './Components/loaders/skeleton-prices/skeleton-prices.component';
+import { SkeletonMonthlyComponent } from './Components/loaders/skeleton-monthly/skeleton-monthly.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +54,8 @@ import { AcordeonComponent } from './Components/acordeon/acordeon.component';
     SelectDiscountComponent,
     MonthlyPaymentsComponent,
     AcordeonComponent,
+    SkeletonPricesComponent,
+    SkeletonMonthlyComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

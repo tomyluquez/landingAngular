@@ -29,4 +29,6 @@ export class HeroComponent {
   year!: string;
   linkCalendly = environment.LINK_CALENDLY;
   linkFreeTrail = environment.LINL_FREE_TRAIL;
+
+  constructor() {}
 }

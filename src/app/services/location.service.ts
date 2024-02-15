@@ -1,11 +1,17 @@
 import { Injectable } from '@angular/core';
 import { environment } from '../Environments/environments';
 
+const currency: { [key: string]: string } = {
+  AR: 'ARS',
+  OTHERS: 'US',
+};
+
 @Injectable({
   providedIn: 'root',
 })
 export class LocationService {
   public userLocation?: string;
+  public userCurrency!: string;
 
   constructor() {
     this.getUserLocation();
@@ -14,7 +20,7 @@ export class LocationService {
   async getUserLocation(): Promise<any> {
     return new Promise((res, rej) => {
       try {
-        fetch('https://api64.ipify.org?format=json')
+        fetch(environment.API_LOCATION_URL)
           .then((res) => res.json())
           .then((data) => {
             res(this.getLocation(data.ip));
@@ -27,6 +33,10 @@ export class LocationService {
     const res = await fetch(`https://ipinfo.io/${ip}?token=eb4243a27bae93`);
     const data = await res.json();
     this.userLocation = data.city;
+    const country: string = data.country;
+    this.userCurrency = currency[country]
+      ? currency[country]
+      : currency['OTHERS'];
   }
 
   // async getUserLocation(): Promise<[number, number]> {

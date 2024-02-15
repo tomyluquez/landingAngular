@@ -113,6 +113,14 @@ scrollbar-thumb:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
 }
 
+.primaryButton {
+  @apply hover:shadow-lg duration-300 text-[14px] py-2 px-4 rounded-[40px] cursor-pointer bg-nucleo hover:bg-verdeNucleo text-white;
+}
+
+.secondaryButton {
+  @apply hover:shadow-lg duration-300 text-[14px] py-2 px-4 rounded-[40px] cursor-pointer !text-nucleo border-2 border-nucleo;
+}
+
 /* Animaciones */
 
 @keyframes slider {

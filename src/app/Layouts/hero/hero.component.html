@@ -13,10 +13,8 @@
                             </app-titles>
                             <div class="flex items-center justify-start gap-4">
                                 <div class="flex flex-col gap-2 items-center justify-center">
-                                    <a *ngIf="isFreeTrailMode" [href]="linkFreeTrail" target="_blank" rel="noreferrer">
-                                        <app-button-gral textButton="Quiero una prueba gratis"
-                                            typeButton="secondary"></app-button-gral>
-                                    </a>
+                                    <div *ngIf="isFreeTrailMode" class="secondaryButton self-start"
+                                        data-tf-live="01HPKZZE78TV70K4WCT0P1Q6BK"></div>
                                     <a [href]="linkCalendly" target="_blank" rel="noreferrer">
                                         <app-button-gral textButton="Quiero agendar una demo"></app-button-gral>
                                     </a>

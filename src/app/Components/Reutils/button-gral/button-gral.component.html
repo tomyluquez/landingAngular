@@ -1,5 +1,4 @@
 <button
-    [ngClass]="{'bg-nucleo hover:bg-verdeNucleo text-white' : typeButton === 'primary', ' text-nucleo border-2 border-nucleo' : typeButton === 'secondary'}"
-    class="hover:shadow-lg duration-300 text-white text-[14px] py-2 px-4 rounded-[40px] cursor-pointer">{{textButton}}
+    [ngClass]="{'primaryButton' : typeButton === 'primary', 'secondaryButton' : typeButton === 'secondary'}">{{textButton}}
 
 </button>

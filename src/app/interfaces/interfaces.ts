@@ -27,10 +27,14 @@ export interface FormElements {
 export interface Planes {
   id: number;
   namePlan: string;
-  price: number;
+  prices: Price;
   items: Array<ItemsPlan>;
   textButton?: string;
   better: boolean;
+}
+
+export interface Price {
+  [key: string]: number;
 }
 
 export interface Discount {
