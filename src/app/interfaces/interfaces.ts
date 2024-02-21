@@ -30,7 +30,7 @@ export interface Planes {
   prices: Price;
   items: Array<ItemsPlan>;
   textButton?: string;
-  better: boolean;
+  isPopular: boolean;
 }
 
 export interface Price {

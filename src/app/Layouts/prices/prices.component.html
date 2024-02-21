@@ -25,8 +25,8 @@
                 p-4 rounded-xl">
                 <div *ngFor="let plan of arrayPrices$.value; let index = index"
                     class="flex flex-col items-start shadowCustom justify-start p-4 md:w-[350px] md:min-h-[420px] rounded-xl text-slate-500 relative"
-                    [ngClass]="{'text-white ': plan.better}"
-                    [ngStyle]="{'background-color': plan.better ? '#90C447' : '#fafafa'}">
+                    [ngClass]="{'text-white ': plan.isPopular}"
+                    [ngStyle]="{'background-color': plan.isPopular ? '#90C447' : '#fafafa'}">
 
                     <app-monthly-payments [plan]="plan" [isFreeTrailMode]="isFreeTrailMode" [currency]="currency" />
 
