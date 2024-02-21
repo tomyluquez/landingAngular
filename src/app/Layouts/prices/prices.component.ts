@@ -20,7 +20,7 @@ export class PricesComponent {
   subTitle = 'Planes Núcleo Check';
   title!: string;
   description =
-    'Debajo podes elegir algun otro plan que se adapte a tus necesidades.';
+    'Debajo puedes elegir algún otro plan que se adapte a tus necesidades.';
   checkedInput = signal(0);
 
   constructor(
@@ -35,11 +35,11 @@ export class PricesComponent {
         if (plans) {
           this.loading = false;
           this.arrayPrices$.next(plans);
-          this.title = `Optimiza la gestion de tu negocio desde ${
+          this.title = `Optimiza la gestión de tu negocio desde ${
             this.currency
           }$ ${this.arrayPrices$.value[0].prices[
             this.currency
-          ].toLocaleString()}. \n Incluye facturación Electrónica y pedidos ilimitados`;
+          ].toLocaleString()}. \n Incluye facturación electrónica y pedidos ilimitados`;
         }
       });
 
