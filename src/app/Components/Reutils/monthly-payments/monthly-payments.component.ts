@@ -40,7 +40,7 @@ export class MonthlyPaymentsComponent implements AfterViewInit {
     script.src = '//embed.typeform.com/next/embed.js';
     script.type = 'text/javascript';
     script.async = true;
-    this.typeformContainer.nativeElement.appendChild(script);
+    this.typeformContainer?.nativeElement.appendChild(script);
   }
 
   calculatePlan(price: number) {

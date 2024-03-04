@@ -3,7 +3,7 @@ import { FormElements } from 'src/app/interfaces/interfaces';
 import { LocationService } from 'src/app/services/location.service';
 
 const optionLocations: { [key: string]: string } = {
-  córdoba: 'córdoba',
+  cordoba: 'córdoba',
   'buenos aires': 'mar del plata',
   mendoza: 'mendoza',
   'santa fe': 'rosario',
