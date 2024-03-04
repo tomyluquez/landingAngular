@@ -13,7 +13,7 @@ interface Testimonial {
 })
 export class TestimonialsComponent {
   title = `Nuestros clientes cuentan cuál es su experiencia con Núcleo Check`;
-  aboutWave = '../../../assets/img/Images/about_s4_wave.png';
+  aboutWave = '../../../assets/img/Images/about_s4_wave.webp';
   subTitle = 'Testimonios';
   description = 'Contamos con las mejores referencias en Google.';
   imgTesti1 = '../assets/img/Testimonials/testi_s4_ic1.png';

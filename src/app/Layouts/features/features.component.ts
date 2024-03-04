@@ -15,7 +15,7 @@ interface Features {
 })
 export class FeaturesComponent {
   arrayFeatures: Features[] = [];
-  imgCircle = '../../../assets/img/Images/feat_circle.png';
+  imgCircle = '../../../assets/img/Images/feat_circle.webp';
   title = 'Increíbles Características';
   subTitle = 'Núcleo Check';
   description =

@@ -14,8 +14,8 @@ export interface Elements {
 })
 export class AboutComponent {
   imgAbout = '../../../assets/img/Images/moviles.webp';
-  aboutBubles = '../../../assets/img/Images/about_s4_bubble.png';
-  aboutWave = '../../../assets/img/Images/about_s4_wave.png';
+  aboutBubles = '../../../assets/img/Images/about_s4_bubble.webp';
+  aboutWave = '../../../assets/img/Images/about_s4_wave.webp';
   aboutLines = '../assets/img/Images/about_s4_lines.png';
   title = 'Registra los pedidos de los meseros';
   subTitle = 'Diseño móvil para meseros';

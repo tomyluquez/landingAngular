@@ -21,7 +21,7 @@ export class FooterComponent {
   subTitle = 'Núcleo Check';
   title = '¿Listo para descubrirnos?';
   description = 'Contacta con nuestros asesores comerciales.';
-  imgHero3 = '../assets/img/Images/header_4_wave.png';
+  imgHero3 = '../assets/img/Images/header_4_wave.webp';
   imgLogo = '../../../assets/img/Nucleo-img/Nucleo_Check_Logovariables-02.png';
   imgFullLogo = '../../../assets/img/Nucleo-img/logoNucleoIT.webp';
   arrayForm: FormElements[] = [];

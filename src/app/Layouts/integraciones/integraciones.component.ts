@@ -11,9 +11,9 @@ interface Apps {
   styleUrls: ['./integraciones.component.css'],
 })
 export class IntegracionesComponent {
-  backInteg = '../assets/img/Images/intg_back.png';
+  backInteg = '../assets/img/Images/intg_back.webp';
   arrayApps: Apps[] = [];
-  title = 'Integrado con las apliaciones más usadas';
+  title = 'Integrado con las aplicaciones más usadas';
   subTitle = 'Todos los pedidos en un solo lugar';
   description =
     'Se integra a la perfección con aplicaciones de delivery y métodos de pago.';

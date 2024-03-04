@@ -8,7 +8,7 @@ import { Buttons, Elements } from 'src/app/interfaces/interfaces';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent implements OnInit {
-  @Input() isFreeTrailMode!: boolean;
+  @Input() isFreeTrailMode: boolean = true;
 
   arrayElements: Elements[] = [];
   imgLogo = '../../../assets/img/Nucleo-img/Nucleo_Check_Logovariables-02.png';

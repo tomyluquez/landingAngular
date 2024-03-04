@@ -8,7 +8,7 @@ import { Elements } from '../about/about.component';
 })
 export class About2Component {
   imgAbout = '../../../assets/img/Images/tablet.webp';
-  aboutBubles = '../assets/img/Images/about_s4_bubble2.png';
+  aboutBubles = '../assets/img/Images/about_s4_bubble2.webp';
   title = 'Monitor de cocina';
   subTitle = 'Comandas virtuales';
   description =

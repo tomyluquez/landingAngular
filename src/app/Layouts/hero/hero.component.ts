@@ -13,11 +13,11 @@ interface optionsHero {
   styleUrls: ['./hero.component.css'],
 })
 export class HeroComponent {
-  @Input() isFreeTrailMode!: boolean;
+  @Input() isFreeTrailMode: boolean = true;
 
   imgHero = '../../../assets/img/Images/devices.webp';
-  imgHero2 = '../../../assets/img/Images/header_4_bubble.png';
-  imgHero3 = '../assets/img/Images/header_4_wave.png';
+  imgHero2 = '../../../assets/img/Images/header_4_bubble.webp';
+  imgHero3 = '../assets/img/Images/header_4_wave.webp';
   subTitle = 'Súmate a la revolución gastronómica';
   title = 'Núcleo Check el software gastronómico que esperabas';
   description = `Puedes usarlo en cualquier dispositivo con internet y tiene todo lo que necesitas. Es la solución práctica que aplican los gastronómicos de habla hispana.`;

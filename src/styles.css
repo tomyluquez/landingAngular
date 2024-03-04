@@ -8,6 +8,10 @@
   font-family: 'poppins', sans-serif;
 }
 
+.tf-v1-popup {
+  z-index: 10000000 !important;
+}
+
 *::selection {
   background-color: #7ea940;
 }
